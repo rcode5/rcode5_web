@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script src="/js/rcode5.js"></script>
+    -->
+    <script>
+function mailer( n, d, s) {
+var lnk = "mailto:" + n + "@" + d; 
+if (s && s.length > -1) {lk += "?subject=" + escape(s); }
+window.location = lk;
+return false;}
+    </script>
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->  
+  </head>
+  <body>
+    <div class="bg"><h1>rcode5</h1></div>
+    <section class='content'>
+      <div class="blog">
+        <a href="http://rcode5.wordpress.com">code ramblings</a>
+      </div>
+      <div class="tweets">
+        <a href="http://twitter.com/rcode5">links i'm reading</a>
+      </div>
+      <div class="tagline">
+        mr rogers writes code.  <span class="mailer"><a href="#" onclick='javascript:mailer('jon','rcode5.com') && false;class='emailme'>jon at rcode5 dot com</a></span>
+    </section>
+  </body>
+</html>
