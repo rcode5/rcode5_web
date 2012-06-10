@@ -6,9 +6,7 @@
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <!--
-        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    -->
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     <script src="/js/browser_detect.js"></script>
     <script src="/js/rcode5.js"></script>
     <script>
@@ -25,15 +23,24 @@ return false;}
   </head>
   <body>
     <div class="bg"><h1>rcode5</h1></div>
-    <section class='content'>
+    <section class='content' id="main">
       <div class="blog">
         <a href="http://rcode5.wordpress.com">code ramblings</a>
       </div>
       <div class="tweets">
         <a href="http://twitter.com/rcode5">links i'm reading</a>
       </div>
+      <div class="about">
+        <a class="section_link" data-section="about" href="#">about</a>
+      </div>
       <div class="tagline">
         mr rogers writes code.  <span class="mailer"><a href="#" onclick='javascript:mailer('jon','rcode5.com') && false;class='emailme'>jon at rcode5 dot com</a></span>
+    </section>
+    <section id="about">
+      about me
+      <div class="blog">
+        <a class="section_link" data-section="main" href="#">back</a>
+      </div>
     </section>
   </body>
 <script type="text/javascript">

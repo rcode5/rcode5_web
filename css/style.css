@@ -1,3 +1,7 @@
+a, img {
+  outline:none;
+}
+
 .bg {
   margin-top: -100px;
   background-image: url(/i/bg.png);
@@ -5,26 +9,38 @@
   width: 110%;
   position:fixed;
   z-index: 1;
-  h1 {  text-indent: -1000px; }
+}
+.bg h1 {  
+  text-indent: -1000px; 
+}
+
+section{
+  z-index:10;
+  position:relative;
 }
 .content {
-  position:relative;
   top: 0;
   left: 0;
-  z-index: 10;
   margin-left:222px;
   padding-top:226px;
 }
+#about {
+  display:none;
+  margin-left:222px;
+  padding-top:226px;
+}
+
 body.chrome .content {
   padding-top: 221px;
 }
 
-.content .blog, .content .tweets {
+.content .blog, .content .tweets, .content .about {
   line-height:74px;
   height: 74px;
 }
 .content > div a {
   text-decoration: none;
+  outline: none;
   letter-spacing: -8px;
   text-transform:uppercase;
   font-size: 72px;
@@ -41,10 +57,10 @@ body.chrome .content {
 }
 .content .tagline {
   margin-left: 5px;
-  margin-top: 242px;
+  margin-top: 168px;
 }
 body.chrome .content .tagline {
-  margin-top: 245px;
+  margin-top: 171px;
 }
 
 .tagline .mailer {
