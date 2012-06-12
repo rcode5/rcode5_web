@@ -11,7 +11,7 @@
     <script src="/js/rcode5.js"></script>
     <script>
 function mailer( n, d, s) {
-var lnk = "mailto:" + n + "@" + d; 
+var lk = "mailto:" + n + "@" + d; 
 if (s && s.length > -1) {lk += "?subject=" + escape(s); }
 window.location = lk;
 return false;}
@@ -24,22 +24,42 @@ return false;}
   <body>
     <div class="bg"><h1>rcode5</h1></div>
     <section class='content' id="main">
-      <div class="blog">
+      <div class="blog fat_link">
         <a href="http://rcode5.wordpress.com">code ramblings</a>
       </div>
-      <div class="tweets">
+      <div class="tweets fat_link">
         <a href="http://twitter.com/rcode5">links i'm reading</a>
       </div>
-      <div class="about">
+      <div class="about fat_link">
         <a class="section_link" data-section="about" href="#">about</a>
       </div>
       <div class="tagline">
-        mr rogers writes code.  <span class="mailer"><a href="#" onclick='javascript:mailer('jon','rcode5.com') && false;class='emailme'>jon at rcode5 dot com</a></span>
+        mr rogers writes code.  
+        <span class="mailer">
+          <a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a>
+        </span>
+      </div>
     </section>
     <section id="about">
-      about me
-      <div class="blog">
-        <a class="section_link" data-section="main" href="#">back</a>
+      <div class="words">
+        <p>Mr Rogers has been working in software development for 20 years. After graduate school where he worked on image compression algorithms, he started working in various science and techology companies, including for 2rye, Carbon Five, Xmarks, BEA Systems, Symyx Technologies, and FAST Search. On the side, he helps run Mission Artists United an initiative built to support and promote the largest arts district in the San Francisco Bay Area.</p>
+        <p>He's contributed to the open source community with a couple of ruby gems (<a href="https://github.com/2rye/qr4r">qr code generation in ruby</a>, <a href="https://github.com/2rye/rosie">rosie, a sql/asset backup system</a>), and by adding bits of code to several external open source projects.</p>
+      </div>
+      <div class="links">
+        <div class="link first" title="code ramblings"><a href="http://rcode5.wordpress.com"><img src="/i/wordpress_32.png"></a></div>
+        <div class="link" title="tweets by rcode5"><a href="http://twitter.com/rcode5"><img src="/i/twitter_32.png"></a></div>
+        <div class="link" title="github"><a href="http://github.com/bunnymatic"><img src="/i/github_white_black_g_32.png"></a></div>
+        <div class="link" title="resume"><a href="http://www.linkedin.com/in/mrrogers"><img src="/i/linkedin_32.png"></a></div>
+        <div class="link"><a class="section_link" data-section="main" href="#">[back]</a></div>
+
+      </div>
+      <div class="fat_link back">
+      </div>
+      <div class="tagline">
+        mr rogers writes code.  
+        <span class="mailer">
+          <a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a>
+        </span>
       </div>
     </section>
   </body>

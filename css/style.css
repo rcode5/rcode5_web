@@ -38,7 +38,7 @@ body.chrome .content {
   line-height:74px;
   height: 74px;
 }
-.content > div a {
+.fat_link a {
   text-decoration: none;
   outline: none;
   letter-spacing: -8px;
@@ -46,7 +46,7 @@ body.chrome .content {
   font-size: 72px;
   font-weight:bold;
 }
-.content .tagline, .content .tagline a {
+.tagline, .tagline a {
   font-size: 10px;
   line-height: 13px;
   height:13px;
@@ -55,6 +55,42 @@ body.chrome .content {
   font-weight: 100;
   color: #444;
 }
+#about {
+  padding-top: 100px;
+}
+#about .tagline {
+  margin-left: 5px;
+  margin-top: 112px;
+}
+body.chrome #about .tagline {
+  margin-top: 115px;
+}
+
+#about .links .link {
+  float: left;
+  margin-left: 10px;
+  height: 32px;
+  line-height: 32px;
+  letter-spacing: -1px;
+}
+#about .links .link.first {
+  margin-left: 0;
+}
+
+#about .links {
+  clear: both;
+  height: 42px;
+}
+#about .fat_link.back {
+  margin-left: 0;
+}
+#about .words {
+  line-height: 26px;
+  width: 500px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+  
 .content .tagline {
   margin-left: 5px;
   margin-top: 168px;
