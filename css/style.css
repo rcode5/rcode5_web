@@ -1,3 +1,28 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+
+body, html {
+  background: white;
+}
+    
 a, img {
   outline:none;
 }
@@ -5,6 +30,8 @@ a, img {
 .bg {
   margin-top: -100px;
   background-image: url(/i/bg.png);
+  background-repeat: no-repeat;
+  background-color: white;
   height: 2000px;
   width: 110%;
   position:fixed;
@@ -12,6 +39,32 @@ a, img {
 }
 .bg h1 {  
   text-indent: -1000px; 
+}
+.tagline {
+  position:relative;
+  font-size: 10px;
+  width: 110px;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-align: center;
+  font-weight: 100;
+  color: #444;
+  left: 59px;
+  top: 670px;
+  z-index: 4;
+}
+.tagline a {
+  color: #444;
+}
+.tagline .mailer {
+  z-index: 5;
+}
+.tagline a, .tagline a:visited {
+  color:#666;
+}
+.tagline a:hover, .tagline a:active {
+  color:#222;
 }
 
 section{
@@ -24,11 +77,18 @@ section{
   margin-left:222px;
   padding-top:226px;
 }
+#projects,
 #about {
   display:none;
   margin-left:222px;
+}
+#about {
   padding-top:226px;
 }
+#projects {
+  padding-top: 106px;
+}
+  
 
 body.chrome .content {
   padding-top: 221px;
@@ -46,24 +106,8 @@ body.chrome .content {
   font-size: 72px;
   font-weight:bold;
 }
-.tagline, .tagline a {
-  font-size: 10px;
-  line-height: 13px;
-  height:13px;
-  letter-spacing: 0px;
-  text-transform: none;
-  font-weight: 100;
-  color: #444;
-}
 #about {
   padding-top: 100px;
-}
-#about .tagline {
-  margin-left: 5px;
-  margin-top: 112px;
-}
-body.chrome #about .tagline {
-  margin-top: 115px;
 }
 
 #about .links .link {
@@ -91,22 +135,58 @@ body.chrome #about .tagline {
   letter-spacing: 1px;
 }
   
-.content .tagline {
-  margin-left: 5px;
-  margin-top: 168px;
+#projects.link {
+  clear:both;
 }
-body.chrome .content .tagline {
-  margin-top: 171px;
+#projects .row {
+  width: 850px;
+  clear: right;
+  margin-bottom: 10px;
+}
+  
+.project {
+  margin: 0 10px 10px;
+  width: 400px;
+  float: left;
+  background: white;
+  border-radius:8px;
+  border:1px solid #ccc;
+  -webkit-border-radius:8px;
+  -moz-border-radius: 8px;
+}
+.project:first-child {
+  margin-left: 0px;
+}
+.project:last-child {
+  margin-right: 0px;
+}
+.project h3 {
+  margin-top: 0;
+  font-size: 18px;
+  padding: 8px 0;
+  font-weight: 100;
+  text-align:center;
+  background: #eee;
+  border-top-right-radius:9px;
+  -moz-border-radius-topright:9px;
+  -webkit-border-top-right-radius:9px;
+  border-top-left-radius:9px;
+  -moz-border-radius-topleft:9px;
+  -webkit-border-top-left-radius:9px;
+}
+.project h3 a {
+  text-decoration: none;
+}
+.project h3 a:hover {
+  text-decoration: underline;
 }
 
-.tagline .mailer {
-  padding-left: 10px;
-}
-.tagline a, .tagline a:visited {
-  color:#666;
-}
-.tagline a:hover, .tagline a:active {
-  color:#222;
+.project .description {
+  width: 350px;
+  margin: 10px auto 20px;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 15px;
 }
 
 a, a:visited {
@@ -114,4 +194,20 @@ a, a:visited {
 }
 a:hover, a:active {
   color:#666;
+}
+
+
+;
+}
+
+.project:first-child {
+  margin-left: 0;
+}
+.project:last-child {
+  margin-right: 0;
+}
+.project .thumb {
+  width: 350px;
+  margin: 0 auto;
+  padding:0;
 }

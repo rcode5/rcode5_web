@@ -25,7 +25,9 @@ $(function() {
       if ($(this).attr('id') != sxn.attr('id')) {
         $(this).fadeOut(function() {
           if (!sxn.is(':visible')) {
-            sxn.fadeIn();
+            setTimeout(function() {
+              sxn.fadeIn(); 
+            },500);
           }
         });
       }

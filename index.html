@@ -22,7 +22,14 @@ return false;}
   <title>rcode5 : bespoke web application development</title>
   </head>
   <body>
-    <div class="bg"><h1>rcode5</h1></div>
+    <div class="bg">
+      <h1>rcode5</h1>
+      <div class="tagline">
+        <div>mr rogers writes code</div>
+        <div class="mailer"><a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a></div>
+      </div>
+    </div>
+
     <section class='content' id="main">
       <div class="blog fat_link">
         <a href="http://rcode5.wordpress.com">code ramblings</a>
@@ -30,14 +37,11 @@ return false;}
       <div class="tweets fat_link">
         <a href="http://twitter.com/rcode5">links i'm reading</a>
       </div>
+      <div class="projects fat_link">
+        <a class="section_link" data-section="projects" href="#">projects</a>
+      </div>
       <div class="about fat_link">
         <a class="section_link" data-section="about" href="#">about</a>
-      </div>
-      <div class="tagline">
-        mr rogers writes code.  
-        <span class="mailer">
-          <a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a>
-        </span>
       </div>
     </section>
     <section id="about">
@@ -53,14 +57,40 @@ return false;}
         <div class="link"><a class="section_link" data-section="main" href="#">[back]</a></div>
 
       </div>
-      <div class="fat_link back">
+    </section>
+    <section id="projects">
+      <div class="clearfix row">
+        <article class="project">
+          <h3><a href="http://missionartistsunited.org" target="_blank">missionartistsunited.org</a></h3>
+          <div class="thumb">
+            <img src="/i/projects/mau_screenshot_small.png">
+          </div>
+          <div class="description">
+            Mission Artists United is a site used to promote artists in the Mission district of San Francisco.  The site manages over 600 active artists providing them with a way to share their works online.  The site includes user management, an administrator CMS for content delivery, MailChimp integration and runs on Ruby on Rails.
+          </div>
+        </article>
+        <article class="project">
+          <h3><a href="http://bedsider.org" target="_blank">bedsider.org</a></h3>
+          <div class="thumb">
+            <img src="/i/projects/bedsider_screenshot_small.png">
+          </div>
+          <div class="description">
+            Bedsider is an online birth control support network for women 18-29 operated by The National Campaign to Prevent Teen and Unplanned Pregnancy, a private non-profit organization.  It includes a custom CMS, integrated SMS and Email systems and runs on Ruby on Rails.
+          </div>
+        </article>
       </div>
-      <div class="tagline">
-        mr rogers writes code.  
-        <span class="mailer">
-          <a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a>
-        </span>
+      <div class="clearfix row">
+        <article class="project">
+          <h3><a href="http://romeydesigns.com" target="_blank">romeydesigns.com</a></h3>
+          <div class="thumb">
+            <img src="/i/projects/romey_screenshot_small.png">
+          </div>
+          <div class="description">
+            This site highlights the work by San Francisco designer Jennifer Meyer.  It includes a custom CMS and runs on Ruby with Sinatra.
+          </div>
+        </article>
       </div>
+      <div class="link"><a class="section_link" data-section="main" href="#">[back]</a></div>    
     </section>
   </body>
 <script type="text/javascript">
