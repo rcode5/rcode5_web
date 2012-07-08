@@ -143,6 +143,9 @@ body.chrome .content {
   clear: right;
   margin-bottom: 10px;
 }
+#projects > .link {
+  margin-bottom: 20px;
+}
   
 .project {
   margin: 0 10px 10px;
