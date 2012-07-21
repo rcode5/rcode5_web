@@ -39,6 +39,16 @@ a, img {
 }
 .bg h1 {  
   text-indent: -1000px; 
+  height: 520px;
+}
+.bg .backlink {
+  height: 500px;
+  width: 190px;
+  position:fixed;
+  left : 20px;
+  top: 100px;
+  cursor: pointer;
+  z-index: 2000;
 }
 .tagline {
   position:relative;
@@ -50,8 +60,8 @@ a, img {
   text-align: center;
   font-weight: 100;
   color: #444;
-  left: 59px;
-  top: 670px;
+  left: 41px;
+  bottom: 0px;
   z-index: 4;
 }
 .tagline a {
@@ -79,7 +89,6 @@ section{
 }
 #projects,
 #about {
-  display:none;
   margin-left:222px;
 }
 #about {
@@ -94,10 +103,10 @@ body.chrome .content {
   padding-top: 221px;
 }
 
-.content .blog, .content .tweets, .content .about {
-  line-height:74px;
-  height: 74px;
+.content .fat_link {
+  line-height:60px;
 }
+
 .fat_link a {
   text-decoration: none;
   outline: none;

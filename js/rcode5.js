@@ -18,19 +18,3 @@ if( window.addEventListener ) {
 }
 
 
-$(function() {
-  $('.section_link').bind('click', function() {
-    var sxn = $('#' + $(this).data('section'));
-    $('section').each(function() {
-      if ($(this).attr('id') != sxn.attr('id')) {
-        $(this).fadeOut(function() {
-          if (!sxn.is(':visible')) {
-            setTimeout(function() {
-              sxn.fadeIn(); 
-            },500);
-          }
-        });
-      }
-    });
-  });
-});
