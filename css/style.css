@@ -148,30 +148,27 @@ body.chrome .content {
   clear:both;
 }
 #projects .row {
-  width: 850px;
-  clear: right;
   margin-bottom: 10px;
 }
 #projects > .link {
+  clear:both;
   margin-bottom: 20px;
 }
   
 .project {
-  margin: 0 10px 10px;
   width: 400px;
   float: left;
+  margin: 0 10px 18px;
+  min-height: 430px;
+}
+.project .container {
   background: white;
   border-radius:8px;
   border:1px solid #ccc;
   -webkit-border-radius:8px;
   -moz-border-radius: 8px;
 }
-.project:first-child {
-  margin-left: 0px;
-}
-.project:last-child {
-  margin-right: 0px;
-}
+
 .project h3 {
   margin-top: 0;
   font-size: 18px;
