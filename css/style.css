@@ -85,8 +85,9 @@ section{
   top: 0;
   left: 0;
   margin-left:222px;
-  padding-top:226px;
+  padding-top:206px;
 }
+#playtime,
 #projects,
 #about {
   margin-left:222px;
@@ -97,10 +98,13 @@ section{
 #projects {
   padding-top: 106px;
 }
+#playtime { 
+  padding-top: 106px;
+}
   
 
 body.chrome .content {
-  padding-top: 221px;
+  padding-top: 201px;
 }
 
 .content .fat_link {
@@ -115,6 +119,12 @@ body.chrome .content {
   font-size: 72px;
   font-weight:bold;
 }
+
+#playtime .fat_link a {
+  letter-spacing: -4px;
+  font-size: 40px;
+}
+
 #about {
   padding-top: 100px;
 }

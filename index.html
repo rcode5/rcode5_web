@@ -10,7 +10,7 @@
      $f = $_SERVER['SCRIPT_FILENAME']; 
      $bits = explode('?', $f);
      $page = preg_replace('/\..*$/','', basename($bits[0]));
-     $allowed_pages = array('main','about','projects');
+     $allowed_pages = array('main','about','projects','play');
      if ( in_array($page, $allowed_pages) ) {
        $section_file = "_" . $page . ".html";
      }
