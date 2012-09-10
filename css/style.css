@@ -1,28 +1,28 @@
 .clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
- 
+
 .clearfix {
-	display: inline-block;
+  display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
-	display: block;
+  display: block;
 }
- 
+
 * html .clearfix {
-	height: 1%;
+  height: 1%;
 }
 
 body, html {
   background: white;
 }
-    
+
 a, img {
   outline:none;
 }
@@ -101,7 +101,7 @@ section{
 #playtime { 
   padding-top: 106px;
 }
-  
+
 
 body.chrome .content {
   padding-top: 201px;
@@ -153,7 +153,7 @@ body.chrome .content {
   text-align: justify;
   letter-spacing: 1px;
 }
-  
+
 #projects.link {
   clear:both;
 }
@@ -164,7 +164,7 @@ body.chrome .content {
   clear:both;
   margin-bottom: 20px;
 }
-  
+
 .project {
   width: 400px;
   float: left;
@@ -215,10 +215,6 @@ a:hover, a:active {
   color:#666;
 }
 
-
-;
-}
-
 .project:first-child {
   margin-left: 0;
 }
@@ -230,3 +226,29 @@ a:hover, a:active {
   margin: 0 auto;
   padding:0;
 }
+
+.browser-ico {
+  background-image: url(/i/browser_logos-32.png);
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+.chrome {
+  background-position: -2px 0;
+}
+.firefox {
+  background-position: -38px 0;
+}
+.opera {
+  background-position: -73px 0;
+}
+.ie {
+  background-position: -142px 0;
+}
+
+.oldbrowsers { height: 200px; margin-left: 80px; font-size: 80%; }
+.oldbrowsers ul { margin: 20px 0; list-style:none; }
+.oldbrowsers li { float: left; margin-left: 20px;}
+.oldbrowsers a { font-size: 120%; }
