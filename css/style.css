@@ -28,7 +28,7 @@ a, img {
 }
 
 .bg {
-  margin-top: -100px;
+  margin-top: -140px;
   background-image: url(/i/bg.png);
   background-repeat: no-repeat;
   background-color: white;
@@ -46,7 +46,7 @@ a, img {
   width: 190px;
   position:fixed;
   left : 20px;
-  top: 100px;
+  top: 60px;
   cursor: pointer;
   z-index: 2000;
 }
@@ -76,6 +76,18 @@ a, img {
 .tagline a:hover, .tagline a:active {
   color:#222;
 }
+.tagline .social {
+  padding-top: 10px;
+  font-size:20px;
+  font-family: 'FontAwesome';
+}
+.tagline .social a{
+  text-decoration: none;
+}
+.tagline .social i{
+  padding: 20px 5px;
+  color: #999;
+}
 
 section{
   z-index:10;
@@ -85,26 +97,23 @@ section{
   top: 0;
   left: 0;
   margin-left:222px;
-  padding-top:206px;
+  padding-top:166px;
 }
 #playtime,
 #projects,
 #about {
   margin-left:222px;
 }
-#about {
-  padding-top:226px;
-}
 #projects {
-  padding-top: 106px;
+  padding-top: 66px;
 }
 #playtime { 
-  padding-top: 106px;
+  padding-top: 88px;
 }
 
 
 body.chrome .content {
-  padding-top: 201px;
+  padding-top: 161px;
 }
 
 .content .fat_link {
@@ -126,7 +135,7 @@ body.chrome .content {
 }
 
 #about {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #about .links .link {
