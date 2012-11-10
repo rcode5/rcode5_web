@@ -248,7 +248,16 @@ a:hover, a:active {
   background-position: -142px 0;
 }
 
-.oldbrowsers { height: 200px; margin-left: 80px; font-size: 80%; }
+.oldbrowsers { 
+  position:absolute; 
+  top: 0; 
+  left: 0; 
+  z-index:1000; 
+  background-color: transparent; 
+  border:1px solid gray;
+  margin-left: 80px; font-size: 80%;
+  padding: 0 10px 10px 10px;
+}
 .oldbrowsers ul { margin: 20px 0; list-style:none; }
 .oldbrowsers li { float: left; margin-left: 20px;}
 .oldbrowsers a { font-size: 120%; }
