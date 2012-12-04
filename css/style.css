@@ -27,7 +27,7 @@ a, img {
   outline:none;
 }
 
-.bg {
+.bg.large {
   margin-top: -140px;
   background-image: url(/i/bg.png);
   background-repeat: no-repeat;
@@ -36,6 +36,9 @@ a, img {
   width: 110%;
   position:fixed;
   z-index: 1;
+}
+.bg.small {
+  display:none;
 }
 .bg h1 {  
   text-indent: -1000px; 
@@ -52,7 +55,7 @@ a, img {
 }
 .tagline {
   position:relative;
-  font-size: 10px;
+  font-size: 62.5%;
   width: 110px;
   line-height: 14px;
   letter-spacing: 0px;
@@ -78,7 +81,7 @@ a, img {
 }
 .tagline .social {
   padding-top: 10px;
-  font-size:20px;
+  font-size:125%;
   font-family: 'FontAwesome';
 }
 .tagline .social a{
@@ -98,11 +101,7 @@ section{
   left: 0;
   margin-left:222px;
   padding-top:166px;
-}
-#playtime,
-#projects,
-#about {
-  margin-left:222px;
+  width: 75%;
 }
 #projects {
   padding-top: 66px;
@@ -125,13 +124,13 @@ body.chrome .content {
   outline: none;
   letter-spacing: -8px;
   text-transform:uppercase;
-  font-size: 72px;
+  font-size: 450%;
   font-weight:bold;
 }
 
 #playtime .fat_link a {
   letter-spacing: -4px;
-  font-size: 40px;
+  font-size: 250%;
 }
 
 #about {
@@ -190,7 +189,7 @@ body.chrome .content {
 
 .project h3 {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 112.5%;
   padding: 8px 0;
   font-weight: 100;
   text-align:center;
@@ -212,9 +211,9 @@ body.chrome .content {
 .project .description {
   width: 350px;
   margin: 10px auto 20px;
-  font-size: 12px;
+  font-size: 75%;
   font-weight: normal;
-  line-height: 15px;
+  line-height: 1.25em;
 }
 
 a, a:visited {
@@ -224,12 +223,6 @@ a:hover, a:active {
   color:#666;
 }
 
-.project:first-child {
-  margin-left: 0;
-}
-.project:last-child {
-  margin-right: 0;
-}
 .project .thumb {
   width: 350px;
   margin: 0 auto;
@@ -264,9 +257,70 @@ a:hover, a:active {
   z-index:1000; 
   background-color: transparent; 
   border:1px solid gray;
-  margin-left: 80px; font-size: 80%;
+  margin-left: 80px; 
+  font-size: 80%;
   padding: 0 10px 10px 10px;
 }
 .oldbrowsers ul { margin: 20px 0; list-style:none; }
 .oldbrowsers li { float: left; margin-left: 20px;}
 .oldbrowsers a { font-size: 120%; }
+
+
+/** media queries */
+@media screen and (max-width: 500px) {
+  .bg.large {
+    display: none;
+  }
+  .content, body.chrome .content {
+    margin: auto;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .fat_link a {
+    font-size: 300%;
+    letter-spacing: -6px;
+  }
+  .bg.small {
+    display: block;
+    margin:auto;
+    width: 80%;
+  }
+ 
+}
+
+/** media queries */
+@media screen and (max-width: 750px) {
+  .bg.large {
+    display: none;
+  }
+  .content, body.chrome .content {
+    margin: auto;
+    padding-top: 0px;
+    margin-top: 0;
+  }
+  .fat_link a {
+    font-size: 350%;
+    letter-spacing: -7px;
+  }
+  .bg.small {
+    text-align:center;
+    display: block;
+    margin:auto;
+    width: 80%;
+  }
+  .bg.small .tagline {
+    width: auto;
+    margin-bottom: 15px;
+    left:auto;
+  }
+  .bg.small .tagline > div {
+    float: left;
+    padding: 0 10px 0;
+  }
+  .bg.small .tagline .social i {
+    padding: 3px;
+  }
+  #projects, #about, #playtime {
+    padding-top: 0;
+  }
+}
