@@ -177,9 +177,9 @@ body.chrome .content {
   width: 400px;
   float: left;
   margin: 0 10px 18px;
-  min-height: 430px;
 }
 .project .container {
+  min-height: 470px;
   background: white;
   border-radius:8px;
   border:1px solid #ccc;
