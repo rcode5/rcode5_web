@@ -116,7 +116,8 @@ body.chrome .content {
 }
 
 .content .fat_link {
-  line-height:60px;
+  line-height: 2em;
+  margin: 1.25em 0;
 }
 
 .fat_link a {
