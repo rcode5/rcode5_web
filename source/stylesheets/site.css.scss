@@ -1,3 +1,5 @@
+@import 'normalize.css';
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -29,7 +31,7 @@ a, img {
 
 .bg.large {
   margin-top: -140px;
-  background-image: url(/i/bg.png);
+  background-image: url(/images/bg.png);
   background-repeat: no-repeat;
   background-color: white;
   height: 2000px;
@@ -40,8 +42,8 @@ a, img {
 .bg.small {
   display:none;
 }
-.bg h1 {  
-  text-indent: -1000px; 
+.bg h1 {
+  text-indent: -1000px;
   height: 520px;
 }
 .bg .backlink {
@@ -106,7 +108,7 @@ section{
 #projects {
   padding-top: 66px;
 }
-#playtime { 
+#playtime {
   padding-top: 88px;
 }
 
@@ -231,7 +233,7 @@ a:hover, a:active {
 }
 
 .browser-ico {
-  background-image: url(/i/browser_logos-32.png);
+  background-image: url(/images/browser_logos-32.png);
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -251,14 +253,14 @@ a:hover, a:active {
   background-position: -142px 0;
 }
 
-.oldbrowsers { 
-  position:absolute; 
-  top: 0; 
-  left: 0; 
-  z-index:1000; 
-  background-color: transparent; 
+.oldbrowsers {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index:1000;
+  background-color: transparent;
   border:1px solid gray;
-  margin-left: 80px; 
+  margin-left: 80px;
   font-size: 80%;
   padding: 0 10px 10px 10px;
 }
@@ -286,7 +288,7 @@ a:hover, a:active {
     margin:auto;
     width: 80%;
   }
- 
+
 }
 
 /** media queries */
