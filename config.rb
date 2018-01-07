@@ -1,9 +1,27 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
+activate :dotenv
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
+
+activate :s3_sync do |config|
+  config.bucket                 = 'rcode5website' 
+  config.region                 = 'us-east-1'
+  config.aws_access_key_id      = ENV['AWS_ACCESS_KEY']
+  config.aws_secret_access_key  = ENV['AWS_ACCESS_SECRET']
+  config.after_build            = true
+end
+
+activate :cloudfront do |config|
+  config.access_key_id      = ENV['AWS_ACCESS_KEY']
+  config.secret_access_key  = ENV['AWS_ACCESS_SECRET']
+  config.distribution_id    = 'EF64K8MG953JW'
+  config.after_build        = true
+end
+
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
