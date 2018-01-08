@@ -1,8 +1,10 @@
 *~
 .#*
-.bundle
 tmp
 log
-backups
-.idea
-
+.bundle
+.cache
+.DS_Store
+.sass-cache
+build/
+.env

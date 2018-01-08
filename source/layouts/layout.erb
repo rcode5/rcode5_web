@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>function mailer(n,d,s){ var lk = "mailto:" + n + "@" + d; if (s && s.length > -1) {lk += "?subject=" + escape(s); } window.location = lk; return false;}</script>
+
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>
+      <%= current_page.data.title || "rcode5 : bespoke web application development" %>
+    </title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css">
+    <%= favicon_tag 'favicon.ico' %>
+    <%= stylesheet_link_tag "site" %>
+    <%= javascript_include_tag "site" %>
+  </head>
+  <body>
+    <div class="small bg">
+      <img src="/images/bg_h.png" title="rcode5">
+      <div class="tagline clearfix">
+        <div>mr rogers writes code</div>
+        <div class="mailer"><a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a></div>
+        <div class="social">
+          <a href="http://twitter.com/rcode5" title="Tweetin'"><i class="icon-twitter"></i></a>
+          <a href="http://rcode5.wordpress.com/" title="Bloggin'"><i class="icon-book"></i></a>
+          <a href="http://github.com/rcode5/" title="Github-in'"><i class="icon-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg large">
+      <div class="backlink">
+        <a href="/">
+          <h1>rcode5</h1>
+        </a>
+        <div class="tagline">
+          <div>mr rogers writes code</div>
+          <div class="mailer"><a href="#" onclick="javascript:mailer('jon','rcode5.com') && false;" class='emailme'>jon at rcode5 dot com</a></div>
+          <div class="social">
+            <a href="http://twitter.com/rcode5" title="Tweetin'"><i class="icon-twitter"></i></a>
+            <a href="http://rcode5.wordpress.com/" title="Bloggin'"><i class="icon-book"></i></a>
+            <a href="http://github.com/rcode5/" title="Github-in'"><i class="icon-github"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <%= yield %>
+
+  </body>
+
+  <script type="text/javascript">
+
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-32269148-1']);
+   _gaq.push(['_setDomainName', 'rcode5.com']);
+   _gaq.push(['_trackPageview']);
+
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+  </script>
+
+</html>
