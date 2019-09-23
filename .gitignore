@@ -8,3 +8,4 @@ log
 .sass-cache
 build/
 .env
+.s3_sync
