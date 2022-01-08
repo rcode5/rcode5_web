@@ -14,7 +14,6 @@ activate :s3_sync do |config|
   config.region                 = 'us-east-1'
   #config.aws_access_key_id      = ENV['AWS_ACCESS_KEY']
   #config.aws_secret_access_key  = ENV['AWS_ACCESS_SECRET']
-  config.after_build            = true
 end
 
 activate :cloudfront do |config|
