@@ -1,6 +1,5 @@
 <section class='content' id="main">
   <div class="blog fat_link"><a href="http://rcode5.wordpress.com">code ramblings</a></div>
-  <div class="tweets fat_link"><a href="http://twitter.com/rcode5">links i'm reading</a></div>
   <% %w(projects playtime about).each do |page| %>
     <div class="<%= page %> fat_link"><%= link_to page, "/#{page}.html", class: "section_link", "data-section" => page %></div>
   <% end %>
